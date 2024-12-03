@@ -7,6 +7,7 @@ import 'package:le_messager/global.enum.dart';
 import 'package:le_messager/repositories/contact.repo.dart';
 import 'package:le_messager/ui/pages/contacts/add.contact.page.dart';
 import 'package:le_messager/ui/pages/contacts/contacts.page.dart';
+import 'package:le_messager/ui/pages/messages/massage.page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -38,6 +39,7 @@ class MyApp extends StatelessWidget {
         routes: {
           "/contacts": (context) => const ContactsPage(),
           "/addContact": (context) => const AddContactPage(),
+          "/messages": (context) => MessagePage(),
         },
         initialRoute: "/contacts",
       ),
